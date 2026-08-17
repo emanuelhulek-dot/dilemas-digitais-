@@ -1,33 +1,41 @@
-<article>
-    <div>
-        <img src="alerta-golpes.png" alt="Alerta sobre golpes na internet" class="imagem">
+<article class="cartao-artigo">
+    <!-- Cabeçalho do Artigo: Título, Autor e Imagem Principal -->
+    <header class="artigo-cabecalho">
+        <img src="alerta-golpes.png" alt="Alerta sobre golpes na internet" class="artigo-imagem">
+        <h1 class="artigo-titulo">Não caia em golpes na internet!</h1>
+        <p class="artigo-autor">Por: <strong>Alexandra</strong></p>
+    </header>
 
-        <h2>Não caia em golpes na internet!</h2>
-
-        <p class="artigo-autor">Por: Alexandra</p>
-
+    <!-- Conteúdo Principal do Artigo -->
+    <section class="artigo-conteudo">
         <p>
             A internet é uma ferramenta incrível, mas também existem golpes criados
             para roubar informações e dinheiro. Fique atento antes de clicar ou compartilhar dados.
         </p>
 
-        <h3>Dicas para navegar com segurança:</h3>
+        <h2 class="artigo-subtitulo">Dicas para navegar com segurança:</h2>
+        
+        <!-- Lista de dicas estruturada corretamente -->
+        <ul class="lista-dicas">
+            <li>🔒 Nunca compartilhe sua senha ou código de confirmação.</li>
+            <li>🔗 Evite clicar em links desconhecidos enviados por mensagens.</li>
+            <li>🛒 Confira se o site é confiável antes de comprar.</li>
+            <li>⚠️ Desconfie de promoções muito baratas ou pedidos de pagamento urgente.</li>
+        </ul>
 
-        <p>
-            🔒 Nunca compartilhe sua senha ou código de confirmação.<br><br>
-            🔗 Evite clicar em links desconhecidos enviados por mensagens.<br><br>
-            🛒 Confira se o site é confiável antes de comprar.<br><br>
-            ⚠️ Desconfie de promoções muito baratas ou pedidos de pagamento urgente.
-        </p>
+        <img src="seguranca-digital.png" alt="Segurança digital representada por um cadeado" class="artigo-imagem">
 
-        <img src="seguranca-digital.png" alt="Segurança digital com cadeado" class="imagem">
-
-        <p>
-            Antes de agir, pense: "Esse site é verdadeiro? Essa mensagem é confiável?"
+        <p class="artigo-reflexao">
+            Antes de agir, pense: <em>"Esse site é verdadeiro? Essa mensagem é confiável?"</em>
             Pequenos cuidados ajudam a proteger seus dados.
         </p>
+    </section>
 
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
-    </div>
-</article>
+    <!-- Rodapé do Artigo: Botões de Interação -->
+    <footer class="artigo-interacao">
+        <button class="botao-reacao" aria-label="Curtir com coração">
+            ❤️ <span class="contador">0</span>
+        </button>
+        <button class="botao-reacao" aria-label="Curtir com joinha">
+            👍 <span class="contador">0</span>
+        </button>
