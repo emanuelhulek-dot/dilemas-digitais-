@@ -1,0 +1,594 @@
+
+!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu blog</title>
+    
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        main {
+            background-color: #FFFFFF;
+            color: #183C63;
+            display: flex;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;Entrar
+Cadastre-se grátis
+Você disse:
+
+!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu blog</title>
+    
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        main {
+            background-color: #FFFFFF;
+            color: #183C63;
+            display: flex;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+       
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(50, 184, 217);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+   
+    <body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+
+  <main>
+        <article>
+            <div>
+                <img src="photo-1717964134799-a98f497172a5.avif" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+      <main>
+        <article>
+            <div>
+                <img src="unnamed.jpg" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+      <main>
+        <article>
+            <div>
+                <img src="images.jpeg" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+    </body>
+
+</html>
+
+O ChatGPT disse:
+Você enviou o código do seu blog em HTML/CSS/JavaScript. Como você não indicou exatamente o que deseja fazer com ele, posso ajudar de algumas formas, por exemplo:
+
+corrigir erros no HTML/CSS;
+melhorar o visual e a responsividade;
+organizar o código;
+adicionar novas funções (comentários, contador de curtidas por post, modo escuro, etc.);
+explicar como cada parte funciona;
+transformar em um projeto mais completo.
+Alguns pontos que já notei no código:
+
+O início do documento está faltando o <
+Você colocou:
+
+!DOCTYPE html>
+
+
+
+O correto é:
+
+<!DOCTYPE html>
+
+
+
+Você repetiu três vezes a estrutura <main>
+Funciona, mas semanticamente é melhor ter um único <main> com vários <article> dentro.
+
+Os botões de curtida compartilham a mesma lógica, mas cada botão tem seu próprio contador
+O seu JavaScript está funcionando para isso, porém os contadores reiniciam ao atualizar a página. Para manter as curtidas salvas, seria necessário usar localStorage.
+
+Imagens SVG podem não carregar
+Você usa:
+
+<img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg">
+
+
+
+Confirme se esse arquivo realmente existe na mesma pasta do HTML.
+
+O CSS poderia melhorar o layout
+Por exemplo, seu main usa:
+
+display: flex;
+
+
+
+mas não define espaçamento nem centralização. Poderia usar:
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+Se você me disser qual é o objetivo (corrigir, melhorar design, adicionar função, etc.), posso fazer a alteração específica.
+
+
+
+Você disse:
+
+quero q vc faça com poucas imagens uma concientização prara não cair em golpes da internet e saites
+
+O ChatGPT disse:
+Você pode transformar seu blog em uma postagem de conscientização usando poucas imagens. Exemplo de um novo artigo para colocar no seu HTML:
+
+<article>
+    <div>
+        <img src="alerta-golpe.png" alt="Alerta contra golpes na internet" class="imagem">
+
+        <h2>Proteja-se dos golpes na internet</h2>
+
+        <p class="artigo-autor">Por: Alexandra</p>
+
+        <p>
+            A internet facilita nossa vida, mas também existem pessoas tentando aplicar golpes.
+            Antes de clicar em links, compartilhar dados ou fazer pagamentos, fique atento!
+        </p>
+
+        <h3>Como evitar golpes:</h3>
+
+        <p>
+            ✅ Não clique em links suspeitos recebidos por mensagens ou e-mails.<br>
+            ✅ Nunca informe senhas, códigos ou dados pessoais para desconhecidos.<br>
+            ✅ Verifique se o site é verdadeiro antes de comprar.<br>
+            ✅ Desconfie de ofertas muito boas para serem verdade.
+        </p>
+
+        <img src="cadeado-seguranca.png" alt="Cadeado representando segurança digital" class="imagem">
+
+        <p>
+            Lembre-se: na internet, alguns segundos de atenção podem evitar grandes prejuízos.
+            Navegue com segurança!
+        </p>
+
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+    </div>
+</article>
+
+
+Use apenas duas imagens:
+
+alerta-golpe.png → uma imagem de alerta, celular ou pessoa desconfiada.
+cadeado-seguranca.png → uma imagem de proteção, cadeado ou segurança digital.
+Você também pode trocar as imagens pelos nomes dos arquivos que já tem na sua pasta.
+
+
+
+Você disse:
+
+monte os comando
+
+O ChatGPT disse:
+Se você quer os comandos prontos para colocar no seu HTML, use este bloco. Ele cria um post de conscientização com poucas imagens:
+
+<article>
+    <div>
+        <img src="alerta-golpes.png" alt="Alerta sobre golpes na internet" class="imagem">
+
+        <h2>Não caia em golpes na internet!</h2>
+
+        <p class="artigo-autor">Por: Alexandra</p>
+
+        <p>
+            A internet é uma ferramenta incrível, mas também existem golpes criados
+            para roubar informações e dinheiro. Fique atento antes de clicar ou compartilhar dados.
+        </p>
+
+        <h3>Dicas para navegar com segurança:</h3>
+
+        <p>
+            🔒 Nunca compartilhe sua senha ou código de confirmação.<br><br>
+            🔗 Evite clicar em links desconhecidos enviados por mensagens.<br><br>
+            🛒 Confira se o site é confiável antes de comprar.<br><br>
+            ⚠️ Desconfie de promoções muito baratas ou pedidos de pagamento urgente.
+        </p>
+
+        <img src="seguranca-digital.png" alt="Segurança digital com cadeado" class="imagem">
+
+        <p>
+            Antes de agir, pense: "Esse site é verdadeiro? Essa mensagem é confiável?"
+            Pequenos cuidados ajudam a proteger seus dados.
+        </p>
+
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+    </div>
+</article>
+        }
+
+       
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(50, 184, 217);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+   
+    <body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+
+  <main>
+        <article>
+            <div>
+                <img src="photo-1717964134799-a98f497172a5.avif" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+      <main>
+        <article>
+            <div>
+                <img src="unnamed.jpg" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+      <main>
+        <article>
+            <div>
+                <img src="images.jpeg" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+    </body>
+
+</html>
+
+O ChatGPT disse:
+Você enviou o código do seu blog em HTML/CSS/JavaScript. Como você não indicou exatamente o que deseja fazer com ele, posso ajudar de algumas formas, por exemplo:
+
+corrigir erros no HTML/CSS;
+melhorar o visual e a responsividade;
+organizar o código;
+adicionar novas funções (comentários, contador de curtidas por post, modo escuro, etc.);
+explicar como cada parte funciona;
+transformar em um projeto mais completo.
+Alguns pontos que já notei no código:
+
+O início do documento está faltando o <
+Você colocou:
+
+!DOCTYPE html>
+
+
+
+O correto é:
+
+<!DOCTYPE html>
+
+
+
+Você repetiu três vezes a estrutura <main>
+Funciona, mas semanticamente é melhor ter um único <main> com vários <article> dentro.
+
+Os botões de curtida compartilham a mesma lógica, mas cada botão tem seu próprio contador
+O seu JavaScript está funcionando para isso, porém os contadores reiniciam ao atualizar a página. Para manter as curtidas salvas, seria necessário usar localStorage.
+
+Imagens SVG podem não carregar
+Você usa:
+
+<img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg">
+
+
+
+Confirme se esse arquivo realmente existe na mesma pasta do HTML.
+
+O CSS poderia melhorar o layout
+Por exemplo, seu main usa:
+
+display: flex;
+
+
+
+mas não define espaçamento nem centralização. Poderia usar:
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+Se você me disser qual é o objetivo (corrigir, melhorar design, adicionar função, etc.), posso fazer a alteração específica.
+
+
+
+Você disse:
+
+quero q vc faça com poucas imagens uma concientização prara não cair em golpes da internet e saites
+
+O ChatGPT disse:
+Você pode transformar seu blog em uma postagem de conscientização usando poucas imagens. Exemplo de um novo artigo para colocar no seu HTML:
+
+<article>
+    <div>
+        <img src="alerta-golpe.png" alt="Alerta contra golpes na internet" class="imagem">
+
+        <h2>Proteja-se dos golpes na internet</h2>
+
+        <p class="artigo-autor">Por: Alexandra</p>
+
+        <p>
+            A internet facilita nossa vida, mas também existem pessoas tentando aplicar golpes.
+            Antes de clicar em links, compartilhar dados ou fazer pagamentos, fique atento!
+        </p>
+
+        <h3>Como evitar golpes:</h3>
+
+        <p>
+            ✅ Não clique em links suspeitos recebidos por mensagens ou e-mails.<br>
+            ✅ Nunca informe senhas, códigos ou dados pessoais para desconhecidos.<br>
+            ✅ Verifique se o site é verdadeiro antes de comprar.<br>
+            ✅ Desconfie de ofertas muito boas para serem verdade.
+        </p>
+
+        <img src="cadeado-seguranca.png" alt="Cadeado representando segurança digital" class="imagem">
+
+        <p>
+            Lembre-se: na internet, alguns segundos de atenção podem evitar grandes prejuízos.
+            Navegue com segurança!
+        </p>
+
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+    </div>
+</article>
+
+
+Use apenas duas imagens:
+
+alerta-golpe.png → uma imagem de alerta, celular ou pessoa desconfiada.
+cadeado-seguranca.png → uma imagem de proteção, cadeado ou segurança digital.
+Você também pode trocar as imagens pelos nomes dos arquivos que já tem na sua pasta.
+
+
+
+Você disse:
+
+monte os comando
+
+O ChatGPT disse:
+Se você quer os comandos prontos para colocar no seu HTML, use este bloco. Ele cria um post de conscientização com poucas imagens:
+
+<article>
+    <div>
+        <img src="alerta-golpes.png" alt="Alerta sobre golpes na internet" class="imagem">
+
+        <h2>Não caia em golpes na internet!</h2>
+
+        <p class="artigo-autor">Por: Alexandra</p>
+
+        <p>
+            A internet é uma ferramenta incrível, mas também existem golpes criados
+            para roubar informações e dinheiro. Fique atento antes de clicar ou compartilhar dados.
+        </p>
+
+        <h3>Dicas para navegar com segurança:</h3>
+
+        <p>
+            🔒 Nunca compartilhe sua senha ou código de confirmação.<br><br>
+            🔗 Evite clicar em links desconhecidos enviados por mensagens.<br><br>
+            🛒 Confira se o site é confiável antes de comprar.<br><br>
+            ⚠️ Desconfie de promoções muito baratas ou pedidos de pagamento urgente.
+        </p>
+
+        <img src="seguranca-digital.png" alt="Segurança digital com cadeado" class="imagem">
+
+        <p>
+            Antes de agir, pense: "Esse site é verdadeiro? Essa mensagem é confiável?"
+            Pequenos cuidados ajudam a proteger seus dados.
+        </p>
+
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+    </div>
+</article>
