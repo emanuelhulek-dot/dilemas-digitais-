@@ -1,41 +1,187 @@
-<article class="cartao-artigo">
-    <!-- Cabeçalho do Artigo: Título, Autor e Imagem Principal -->
-    <header class="artigo-cabecalho">
-        <img src="alerta-golpes.png" alt="Alerta sobre golpes na internet" class="artigo-imagem">
-        <h1 class="artigo-titulo">Não caia em golpes na internet!</h1>
-        <p class="artigo-autor">Por: <strong>Alexandra</strong></p>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Tech - Dilema Digital</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        body {
+            background-color: #f4f6f9; /* Mudado de amarelo para um tom neutro que destaca mais o conteúdo */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px 0;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: normal; /* Correção para o texto do post não ficar todo em negrito */
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #555;
+            margin-top: -5px;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 85%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        article div:first-child {
+            width: 70%;
+        }
+
+        h2 {
+            margin-top: 10px;
+            color: #183C63;
+        }
+
+        button {
+            background-color: #183C63;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dilema Digital & Alerta na Internet</h1>
+        <p>Conectados, mas até que ponto seguros? Um espaço para refletir sobre o uso consciente da tecnologia.</p>
+        <button>❤️ <span>0</span></button>
+        <button>👍 <span>0</span></button>
     </header>
 
-    <!-- Conteúdo Principal do Artigo -->
-    <section class="artigo-conteudo">
-        <p>
-            A internet é uma ferramenta incrível, mas também existem golpes criados
-            para roubar informações e dinheiro. Fique atento antes de clicar ou compartilhar dados.
-        </p>
+    <main>
+        <!-- POST 1: LINKS FALSOS (PHISHING) -->
+        <article>
+            <div>
+                <h2>O Perigo dos Links Falsos e Golpes Virtuais</h2>
+                <p class="artigo-autor">Por: Alexandra Terezinha Kapusinski</p>
+                <p>O clique impulsivo é o maior aliado dos cibercriminosos. Através do <strong>Phishing</strong>, links falsos enviados por SMS, WhatsApp ou e-mails fingem ser de fontes confiáveis (como bancos ou promoções imperdíveis). Ao entrar nesses sites duvidosos, você corre o risco de ter senhas roubadas, dados bancários clonados e vírus instalados silenciosamente no seu dispositivo.</p>
+                <p><strong>Alerta:</strong> Sempre desconfie de mensagens alarmantes ou com vantagens exageradas. Verifique o endereço do link antes de clicar!</p>
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
+            </div>
+            <div>
+                <img src="https://unsplash.com" class="imagem" alt="Celular exibindo tela de segurança e alertas">
+            </div>
+        </article>
 
-        <h2 class="artigo-subtitulo">Dicas para navegar com segurança:</h2>
-        
-        <!-- Lista de dicas estruturada corretamente -->
-        <ul class="lista-dicas">
-            <li>🔒 Nunca compartilhe sua senha ou código de confirmação.</li>
-            <li>🔗 Evite clicar em links desconhecidos enviados por mensagens.</li>
-            <li>🛒 Confira se o site é confiável antes de comprar.</li>
-            <li>⚠️ Desconfie de promoções muito baratas ou pedidos de pagamento urgente.</li>
-        </ul>
+        <!-- POST 2: DEPENDÊNCIA DIGITAL -->
+        <article>
+            <div>
+                <h2>A Linha Tênue entre Conexão e Dependência</h2>
+                <p class="artigo-autor">Por: Alexandra Terezinha Kapusinski</p>
+                <p>O algoritmo das redes sociais é desenhado para reter nossa atenção pelo maior tempo possível. O uso excessivo de telas impacta diretamente o sono, o foco e a nossa saúde mental, gerando ansiedade e a falsa sensação de que precisamos estar online 24 horas por dia. O verdadeiro dilema digital está em equilibrar as facilidades da internet sem se tornar refém dela.</p>
+                <p><strong>Alerta:</strong> Monitore o seu tempo de tela diário e faça pausas desconectadas para preservar sua mente.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
+            </div>
+            <div>
+                <img src="https://unsplash.com" class="imagem" alt="Pessoa imersa olhando para a tela do computador no escuro">
+            </div>
+        </article>
 
-        <img src="seguranca-digital.png" alt="Segurança digital representada por um cadeado" class="artigo-imagem">
+        <!-- POST 3: PRIVACIDADE DE DADOS -->
+        <article>
+            <div>
+                <h2>Sua Privacidade Vale Ouro na Rede</h2>
+                <p class="artigo-autor">Por: Alexandra Terezinha Kapusinski</p>
+                <p>Na internet, quando um serviço ou aplicativo parece ser totalmente gratuito, na verdade, a moeda de troca são os seus dados pessoais. Rastros de navegação, curtidas e localizações são coletados a todo momento para criar perfis de consumo. Proteger sua privacidade é fundamental para evitar exposição desnecessária e vazamentos.</p>
+                <p><strong>Alerta:</strong> Use senhas fortes e diferentes para cada site, ative a autenticação em duas etapas (2FA) e leia as permissões dos aplicativos.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
+            </div>
+            <div>
+                <img src="https://unsplash.com" class="imagem" alt="Teclado iluminado com conceitos de código e segurança de dados">
+            </div>
+        </article>
+    </main>
 
-        <p class="artigo-reflexao">
-            Antes de agir, pense: <em>"Esse site é verdadeiro? Essa mensagem é confiável?"</em>
-            Pequenos cuidados ajudam a proteger seus dados.
-        </p>
-    </section>
+    <footer>
+        <p>© 2026 Meu Blog Tech | Desenvolvido por Alexandra Terezinha Kapusinski</p>
+    </footer>
 
-    <!-- Rodapé do Artigo: Botões de Interação -->
-    <footer class="artigo-interacao">
-        <button class="botao-reacao" aria-label="Curtir com coração">
-            ❤️ <span class="contador">0</span>
-        </button>
-        <button class="botao-reacao" aria-label="Curtir com joinha">
-            👍 <span class="contador">0</span>
-        </button>
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
